@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6lK-E9-S2O">
+                                <rect key="frame" x="16" y="20" width="568" height="29"/>
+                                <segments>
+                                    <segment title="Pen"/>
+                                    <segment title="Highlighter"/>
+                                    <segment title="Eraser"/>
+                                </segments>
+                                <connections>
+                                    <action selector="drawToolSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="lH0-OG-WLw"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zdz-yS-5Rl">
+                                <rect key="frame" x="16" y="56" width="123" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="123" id="aUG-bd-mTk"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Black"/>
+                                    <segment title="Red"/>
+                                </segments>
+                                <connections>
+                                    <action selector="colorSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="MqX-z5-utJ"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="abi-0C-wBG">
+                                <rect key="frame" x="461" y="56" width="123" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="123" id="V2f-y5-1Ef"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="2pt"/>
+                                    <segment title="20pt"/>
+                                </segments>
+                                <connections>
+                                    <action selector="sizeSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="PZC-Lf-JTW"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="abi-0C-wBG" firstAttribute="trailing" secondItem="6lK-E9-S2O" secondAttribute="trailing" id="1Fp-ek-Sx7"/>
+                            <constraint firstItem="6lK-E9-S2O" firstAttribute="leading" secondItem="zdz-yS-5Rl" secondAttribute="leading" id="B3m-g8-oix"/>
+                            <constraint firstItem="zdz-yS-5Rl" firstAttribute="baseline" secondItem="abi-0C-wBG" secondAttribute="baseline" id="Lk6-SJ-ccP"/>
+                            <constraint firstItem="6lK-E9-S2O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WH9-7M-XZ5"/>
+                            <constraint firstItem="6lK-E9-S2O" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="aVf-KY-thc"/>
+                            <constraint firstItem="6lK-E9-S2O" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="gwa-Lx-LIh"/>
+                            <constraint firstItem="zdz-yS-5Rl" firstAttribute="top" secondItem="6lK-E9-S2O" secondAttribute="bottom" constant="8" symbolic="YES" id="zId-h6-DAf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorSelector" destination="zdz-yS-5Rl" id="NlH-cL-Tt1"/>
+                        <outlet property="drawToolSelector" destination="6lK-E9-S2O" id="eGK-Wr-JSD"/>
+                        <outlet property="strokeSizeSelector" destination="abi-0C-wBG" id="9kH-tW-Sed"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240" y="120"/>
+        </scene>
+    </scenes>
+</document>

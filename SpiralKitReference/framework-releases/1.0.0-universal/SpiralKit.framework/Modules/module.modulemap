@@ -1,0 +1,6 @@
+framework module SpiralKit {
+  umbrella header "SpiralKit.h"
+
+  export *
+  module * { export * }
+}

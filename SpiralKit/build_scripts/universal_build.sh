@@ -19,10 +19,18 @@ rm -rf ${OUTPUT_PACKAGE_DIR}
 rm -rf ${OUTPUT_DELIVERY_DIR}
 mkdir -p ${OUTPUT_DELIVERY_DIR}
 
-cp -r ${BUILD_DIR}/${OUTPUT_CONFIGURATION_NAME}-iphoneos ${OUTPUT_PACKAGE_DIR}
+cp -r ${BUILD_DIR}/${OUTPUT_CONFIGURATION_NAME}-iphonesimulator ${OUTPUT_PACKAGE_DIR}
 
-rm ${OUTPUT_PACKAGE_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}
+SIMULATOR_BUILD_ARCH=$(lipo "${BUILD_DIR}/${OUTPUT_CONFIGURATION_NAME}-iphonesimulator/${PRODUCT_NAME}.framework/${PRODUCT_NAME}" -archs)
+DEVICE_BUILD_ARCH=$(lipo "${BUILD_DIR}/${OUTPUT_CONFIGURATION_NAME}-iphoneos/${PRODUCT_NAME}.framework/${PRODUCT_NAME}" -archs)
 
-lipo -create -output "${OUTPUT_PACKAGE_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}" "${BUILD_DIR}/${OUTPUT_CONFIGURATION_NAME}-iphonesimulator/${PRODUCT_NAME}.framework/${PRODUCT_NAME}" "${BUILD_DIR}/${OUTPUT_CONFIGURATION_NAME}-iphoneos/${PRODUCT_NAME}.framework/${PRODUCT_NAME}"
+if [ "$DEVICE_BUILD_ARCH" == "$SIMULATOR_BUILD_ARCH" ]
+then
+    echo Creating universal binary with multiple architectures.
+    rm ${OUTPUT_PACKAGE_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}
+    lipo -create -output "${OUTPUT_PACKAGE_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}" "${BUILD_DIR}/${OUTPUT_CONFIGURATION_NAME}-iphonesimulator/${PRODUCT_NAME}.framework/${PRODUCT_NAME}" "${BUILD_DIR}/${OUTPUT_CONFIGURATION_NAME}-iphoneos/${PRODUCT_NAME}.framework/${PRODUCT_NAME}"
+else
+    echo Device and simulator architectures match.  Returning unmodified simulator build.
+fi
 
 mv ${OUTPUT_PACKAGE_DIR} ${OUTPUT_DELIVERY_DIR}/${OUTPUT_PACKAGE_NAME}

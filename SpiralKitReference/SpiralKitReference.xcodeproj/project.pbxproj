@@ -16,8 +16,8 @@
 		4D463A411AFF26CB0051EFF0 /* SpiralKitReferenceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D463A401AFF26CB0051EFF0 /* SpiralKitReferenceTests.m */; };
 		4D463A4B1AFF275B0051EFF0 /* StrokeDrawData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D463A4A1AFF275B0051EFF0 /* StrokeDrawData.m */; };
 		4D463A4F1AFF276F0051EFF0 /* DrawData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D463A4D1AFF276F0051EFF0 /* DrawData.m */; };
-		4D463A511AFF280B0051EFF0 /* SpiralKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D463A501AFF280B0051EFF0 /* SpiralKit.framework */; };
-		4D463A521AFF280B0051EFF0 /* SpiralKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4D463A501AFF280B0051EFF0 /* SpiralKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8FF330C22955776C00E2B3A1 /* SpiralKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF330C12955776B00E2B3A1 /* SpiralKit.framework */; };
+		8FF330C42955776C00E2B3A1 /* SpiralKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FF330C12955776B00E2B3A1 /* SpiralKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4D463A521AFF280B0051EFF0 /* SpiralKit.framework in Embed Frameworks */,
+				8FF330C42955776C00E2B3A1 /* SpiralKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,7 +45,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4D463A211AFF26CB0051EFF0 /* SpiralKitReference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpiralKitReference.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D463A251AFF26CB0051EFF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D463A261AFF26CB0051EFF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4D463A281AFF26CB0051EFF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,14 +54,15 @@
 		4D463A2F1AFF26CB0051EFF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D463A311AFF26CB0051EFF0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4D463A341AFF26CB0051EFF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		4D463A3A1AFF26CB0051EFF0 /* SpiralKitReferenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpiralKitReferenceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D463A3A1AFF26CB0051EFF0 /* SpiralKitReferenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SpiralKitReferenceTests.xctest; path = "/Users/markjohnson/Repositories/DG/spiralkit/SpiralKitReference/build/Debug-iphoneos/SpiralKitReferenceTests.xctest"; sourceTree = "<absolute>"; };
 		4D463A3F1AFF26CB0051EFF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D463A401AFF26CB0051EFF0 /* SpiralKitReferenceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpiralKitReferenceTests.m; sourceTree = "<group>"; };
 		4D463A4A1AFF275B0051EFF0 /* StrokeDrawData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrokeDrawData.m; sourceTree = "<group>"; };
 		4D463A4C1AFF276F0051EFF0 /* DrawData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawData.h; sourceTree = "<group>"; };
 		4D463A4D1AFF276F0051EFF0 /* DrawData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawData.m; sourceTree = "<group>"; };
 		4D463A4E1AFF276F0051EFF0 /* StrokeDrawData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrokeDrawData.h; sourceTree = "<group>"; };
-		4D463A501AFF280B0051EFF0 /* SpiralKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpiralKit.framework; path = "framework-releases/1.0.0-universal/SpiralKit.framework"; sourceTree = "<group>"; };
+		8FF330C12955776B00E2B3A1 /* SpiralKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpiralKit.framework; path = "framework-releases/1.0.1-universal/SpiralKit.framework"; sourceTree = "<group>"; };
+		8FF330C32955776C00E2B3A1 /* SpiralKitReference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SpiralKitReference.app; path = "/Users/markjohnson/Repositories/DG/spiralkit/SpiralKitReference/build/Debug-iphoneos/SpiralKitReference.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D463A511AFF280B0051EFF0 /* SpiralKit.framework in Frameworks */,
+				8FF330C22955776C00E2B3A1 /* SpiralKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,19 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				4D463A231AFF26CB0051EFF0 /* SpiralKitReference */,
-				4D463A501AFF280B0051EFF0 /* SpiralKit.framework */,
 				4D463A3D1AFF26CB0051EFF0 /* SpiralKitReferenceTests */,
-				4D463A221AFF26CB0051EFF0 /* Products */,
+				8F74D7F22952D28800F9839C /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		4D463A221AFF26CB0051EFF0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4D463A211AFF26CB0051EFF0 /* SpiralKitReference.app */,
-				4D463A3A1AFF26CB0051EFF0 /* SpiralKitReferenceTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		4D463A231AFF26CB0051EFF0 /* SpiralKitReference */ = {
@@ -148,6 +138,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8F74D7F22952D28800F9839C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FF330C12955776B00E2B3A1 /* SpiralKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,7 +164,7 @@
 			);
 			name = SpiralKitReference;
 			productName = SpiralKitReference;
-			productReference = 4D463A211AFF26CB0051EFF0 /* SpiralKitReference.app */;
+			productReference = 8FF330C32955776C00E2B3A1 /* SpiralKitReference.app */;
 			productType = "com.apple.product-type.application";
 		};
 		4D463A391AFF26CB0051EFF0 /* SpiralKitReferenceTests */ = {
@@ -193,11 +191,13 @@
 		4D463A191AFF26CB0051EFF0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 1420;
 				ORGANIZATIONNAME = "Digital Generalists, LLC.";
 				TargetAttributes = {
 					4D463A201AFF26CB0051EFF0 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 942PLAMQ5L;
+						ProvisioningStyle = Automatic;
 					};
 					4D463A391AFF26CB0051EFF0 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -210,11 +210,12 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 4D463A181AFF26CB0051EFF0;
-			productRefGroup = 4D463A221AFF26CB0051EFF0 /* Products */;
+			productRefGroup = 4D463A181AFF26CB0051EFF0;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -299,23 +300,35 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -331,7 +344,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/framework-releases/1.0.1-universal/SpiralKit.framework/Headers/**";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -342,20 +357,31 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -368,7 +394,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/framework-releases/1.0.1-universal/SpiralKit.framework/Headers/**";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -379,13 +407,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 942PLAMQ5L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/framework-releases/1.0.0-universal",
+					"$(PROJECT_DIR)/framework-releases/1.0.1-universal",
 				);
 				INFOPLIST_FILE = SpiralKitReference/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digitalgeneralists.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -393,13 +433,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 942PLAMQ5L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/framework-releases/1.0.0-universal",
+					"$(PROJECT_DIR)/framework-releases/1.0.1-universal",
 				);
 				INFOPLIST_FILE = SpiralKitReference/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digitalgeneralists.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -417,6 +469,7 @@
 				);
 				INFOPLIST_FILE = SpiralKitReferenceTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digitalgeneralists.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpiralKitReference.app/SpiralKitReference";
 			};
@@ -432,6 +485,7 @@
 				);
 				INFOPLIST_FILE = SpiralKitReferenceTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digitalgeneralists.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpiralKitReference.app/SpiralKitReference";
 			};

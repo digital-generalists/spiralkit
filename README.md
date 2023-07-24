@@ -1,58 +1,50 @@
-[1]: http://digitalgeneralists.com/spiral  "Spiral by Digital Generalists"
-[2]: http://digitalgeneralists.com  "Digital Generalists, LLC."
-[3]: https://developer.apple.com/xcode/downloads/ "Apple Xcode"
-[4]: http://www.apache.org/licenses/LICENSE-2.0 "Apache License 2.0"
-[5]: http://www.effectiveui.com/blog/2011/12/02/how-to-build-a-simple-painting-app-for-ios/ "How to build a simple painting app for iOS"
-[6]: http://digitalgeneralists.com/spiralkit/documentation "SpiralKit by Digital Generalists Documentation"
-[7]: http://digitalgeneralists.com/spiralkit "SpiralKit by Digital Generalists"
-
 # SpiralKit by Digital Generalists
 
-A drawing framework for iOS
+*A drawing framework for iOS*
 
 ## What Is SpiralKit
 
-[SpiralKit](7) is a drawing framework for iOS written in Objective-C. The framework enables *drawing* on a UIView in iOS and ships with pen, highlighter, and eraser drawing effects.
+[SpiralKit](http://digitalgeneralists.com/spiralkit) is a drawing framework for iOS written in Objective-C. The framework enables drawing on a UIView in iOS and ships with pen, highlighter, and eraser drawing effects.
 
-The framework is built specifically to enable adding new effects, color spaces, and drawing algorithms in a modular fashion. If you want to provide a unique drawing effect, support of the CMYK color space, or a custom drawing algorithm, you can add such features to [SpiralKit](7) without having to modify the fundamental components of the framework in most cases.
+The framework is built specifically to enable adding new effects, color spaces, and drawing algorithms in a modular fashion. If you want to provide a unique drawing effect, support of the CMYK color space, or add a custom drawing algorithm, you can add such features to [SpiralKit](http://digitalgeneralists.com/spiralkit) without having to modify the fundamental components of the framework in most cases.
 
 ## Documentation
 
-Complete documentation for SpiralKit can be found [here](6).
+Complete documentation for SpiralKit can be found [here](http://digitalgeneralists.com/spiralkit/documentation).
 
 ## License
 
-[SpiralKit](7) is released under the [Apache License 2.0](4).
+[SpiralKit](http://digitalgeneralists.com/spiralkit) is released under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
-See the `LICENSE.txt` file for the formal license specification.
+See the [`LICENSE.txt`](LICENSE.txt) file for the formal license specification.
 
 ## Prerequisites and Supported Versions
 
 ### Prerequisites
 
-[SpiralKit](7) is an iOS-specific framework.  To build and use [SpiralKit](7), you need to have Xcode installed.  
+[SpiralKit](http://digitalgeneralists.com/spiralkit) is an iOS-specific framework.  To build and use [SpiralKit](http://digitalgeneralists.com/spiralkit), you need to have Xcode installed.  
 
 The provided Xcode project files are generated from Xcode 6.3.1.
 
-* Xcode [download](3)
+* Xcode \[[download](https://developer.apple.com/xcode/)\]
 
-Xcode should be the only prerequisite for using [SpiralKit](7).  If you want to run [SpiralKit](7) on a device, well, you’ll need an iOS device.
+Xcode should be the only prerequisite for using [SpiralKit](http://digitalgeneralists.com/spiralkit).  If you want to run [SpiralKit](http://digitalgeneralists.com/spiralkit) on a device, you’ll need an iOS device.
 
 ### Supported Versions
 
-The code for [SpiralKit](7) is formally verified back to iOS 8.0.  Realistically, the actual functional code should be portable back to iOS 5.1.
+The code for [SpiralKit](http://digitalgeneralists.com/spiralkit) is verified back to iOS 8.0.  Theoretically, the functional code should be portable back to iOS 5.1.
 
-Feel free to attempt to take [SpiralKit](7) back all the way to 5.1, but you will likely encounter compiler warnings and have no guarantees about the appropriate fit for any of the provided build scripts or project files.
+Feel free to attempt to take [SpiralKit](http://digitalgeneralists.com/spiralkit) back all the way to 5.1, but there may be compiler warnings and the provided build scripts and project files likely won't function as intended for builds targeting versions of iOS prior to 8.0.
 
-The best bet for pre-iOS 8 integration of the framework is direct incorporation of the [SpiralKit](7) source into your application binary.
+The best bet for pre-iOS 8 integration of the framework is direct incorporation of the [SpiralKit](http://digitalgeneralists.com/spiralkit) source into your application binary.
 
 ## IDE
 
-[SpiralKit](7) was developed using Xcode 4.3.2 through 6.3.1.  Project files for Xcode 6.3.1 are included with the distribution.
+[SpiralKit](http://digitalgeneralists.com/spiralkit) was developed using Xcode 4.3.2 through 6.3.1.  Project files for Xcode 6.3.1 are included with the distribution.
 
 ## Building and Packaging
 
-[SpiralKit](7) uses Xcode build profiles linked to shell scripts as its primary build system.  
+[SpiralKit](http://digitalgeneralists.com/spiralkit) uses Xcode build profiles linked to shell scripts as its primary build system.  
 
 
 ### Building the Framework
@@ -89,7 +81,7 @@ The `Public Release` build profile will create a release build of the framework 
 
 ### Packaging the Framework
 
-Building the framework will create a working version of [SpiralKit](7) that can be used within the iOS simulator. However, finding and configuring an optimized version of the built framework for inclusion in an application requires some additional work. The packaging build profiles simplify and largely automate these tasks.
+Building the framework will create a working version of [SpiralKit](http://digitalgeneralists.com/spiralkit) that can be used within the iOS simulator. However, finding and configuring an optimized version of the built framework for inclusion in an application requires some additional work. The packaging build profiles simplify and largely automate these tasks.
 
 #### Packaging as a Universal Binary
 
@@ -129,31 +121,31 @@ The packaged framework will be created in the `[SpiralKit project root]/build_ou
 
 ## Including SpiralKit in an Application
 
-To include a built version of the [SpiralKit](7) framework in an application:
+To include a built version of the [SpiralKit](http://digitalgeneralists.com/spiralkit) framework in an application:
 
 - Build and package a version of the framework as described above
 - Create a new application via Xcode
 - Open the new project in Xcode
 - Select the project file and click **General** in the code editor window
 - Find the **Embedded Binaries** section and click the **+** button
-- Navigate to the directory containing the local copy of the [SpiralKit](7) framework that was just built and select **SpiralKit.framework**
-- In any file that references an API, class, or protocol from the framework, add an import statement for the [SpiralKit](7) framework to the referencing source file.  This is essentially the same operation you would perform for a pre-packaged iOS-framework such as UIKit.
+- Navigate to the directory containing the local copy of the [SpiralKit](http://digitalgeneralists.com/spiralkit) framework that was just built and select **SpiralKit.framework**
+- In any file that references an API, class, or protocol from the framework, add an import statement for the [SpiralKit](http://digitalgeneralists.com/spiralkit) framework to the referencing source file.  This is essentially the same operation you would perform for a pre-packaged iOS-framework such as UIKit.
 
         #import <SpiralKit/SpiralKit.h>
 
 - Create data provider classes to manage the drawing operations
 
-All provided cache-based drawing algorithms require a data provider class that complies with the `DGSKCacheDrawDataProviderProtocol` protocol.
+All provided cache-based drawing algorithms require a data provider class that complies with the [`DGSKCacheDrawDataProviderProtocol`](./SpiralKit/SpiralKit/DGSKCacheDrawDataProviderProtocol.h) protocol.
 
-All provided stroke-based drawing algorithms require a data provider class that complies with the `DGSKStrokeDrawDataProviderProtocol` protocol.
+All provided stroke-based drawing algorithms require a data provider class that complies with the [`DGSKStrokeDrawDataProviderProtocol`](/SpiralKit/SpiralKit/DGSKStrokeDrawDataProviderProtocol.h) protocol.
 
-Both `DGSKCacheDrawDataProviderProtocol` and `DGSKStrokeDrawDataProviderProtocol` inherit from `DGSKDrawDataProviderProtocol`.
+Both [`DGSKCacheDrawDataProviderProtocol`](/SpiralKit/SpiralKit/DGSKCacheDrawDataProviderProtocol.h) and [`DGSKStrokeDrawDataProviderProtocol`](/SpiralKit/SpiralKit/DGSKStrokeDrawDataProviderProtocol.h) inherit from [`DGSKDrawDataProviderProtocol`](/SpiralKit/SpiralKit/DGSKDrawDataProviderProtocol.h).
 
 These protocols can be mixed within the same class, meaning that cache-based and stroke-based drawing algorithms can share the same data provider assuming the class implements both protocols.
 
-See the SpiralKitReference application for a basic implementation of a class implementing both protocols or the [SpiralKit documentation](6) for complete information on implementing the protocols.
+See the SpiralKitReference application for a basic implementation of a class implementing both protocols or the [SpiralKit documentation](http://digitalgeneralists.com/spiralkit/documentation) for complete information on implementing the protocols.
 
-- Wire [SpiralKit](7) into the application
+- Wire [SpiralKit](http://digitalgeneralists.com/spiralkit) into the application
 
 		/***/
 		@implementation ViewController
@@ -189,18 +181,18 @@ See the SpiralKitReference application for a basic implementation of a class imp
 
 That's it. After performing the above steps, you should be able to draw on the inserted 'drawView' UIView instance within your application's UI.
 
-See the SpiralKitReference application for a basic implementation of a ViewController implementing [SpiralKit](7) or the [SpiralKit documentation](6) for complete information on implementing [SpiralKit](7).
+See the SpiralKitReference application for a basic implementation of a ViewController implementing [SpiralKit](http://digitalgeneralists.com/spiralkit) or the [SpiralKit documentation](http://digitalgeneralists.com/spiralkit/documentation) for complete information on implementing [SpiralKit](http://digitalgeneralists.com/spiralkit).
 
 ## The Reference Implementation
 
-The [SpiralKit](7) reference implementation provides a very simple implementation of including [SpiralKit](7) in an application and should be used to provide guidance on how to incorporate [SpiralKit](7) into an application.
+The [SpiralKit](http://digitalgeneralists.com/spiralkit) reference implementation provides a very simple implementation of including [SpiralKit](http://digitalgeneralists.com/spiralkit) in an application and should be used to provide guidance on how to incorporate [SpiralKit](http://digitalgeneralists.com/spiralkit) into an application.
 
-The reference implementation links to a pre-compiled universal instance of the [SpiralKit](7) framework. This provided build of the framework linked to the reference implementation can be found at `[reference implementation source directory]/framework-releases`.
+The reference implementation links to a pre-compiled universal instance of the [SpiralKit](http://digitalgeneralists.com/spiralkit) framework. This provided build of the framework linked to the reference implementation can be found at `[reference implementation source directory]/framework-releases`.
 
 ## Acknowledgments
 
-The original implementation of [SpiralKit](7) was influenced by [this post](5).  The final implementation is deeply spiked from the one provided in that article, but we want to give credit for the initial direction.
+The original implementation of [SpiralKit](http://digitalgeneralists.com/spiralkit) was influenced by [this post](http://www.effectiveui.com/blog/2011/12/02/how-to-build-a-simple-painting-app-for-ios/).  The final implementation is deeply spiked from the one provided in the article, but we want to give credit for the initial direction.
 
 The Douglas-Peucker algorithm implementation methods in this framework are based on work from https://github.com/andreac/lineSmooth.
 
-*Copyright (c) 2015 - 2022 [Digital Generalists, LLC.](2)*
+*Copyright © 2015 - 2023 [Digital Generalists, LLC.](http://digitalgeneralists.com)*
